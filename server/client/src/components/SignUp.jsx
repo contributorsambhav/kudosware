@@ -24,7 +24,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', formData, { withCredentials: true });
+      const response = await axios.post('https://kudosware-jxcp.onrender.com/api/auth/register', formData, { withCredentials: true });
       setSuccess('Registration successful!');
       setError('');
     } catch (err) {

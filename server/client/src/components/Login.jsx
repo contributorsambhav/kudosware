@@ -16,7 +16,7 @@ const navigate= useNavigate()
   const [success, setSuccess] = useState('');
 
   React.useEffect(() => {
-    axios.get("http://localhost:5000/profile", {
+    axios.get("https://kudosware-jxcp.onrender.com/profile", {
         withCredentials: true
     })
         .then(res => {
@@ -46,7 +46,7 @@ const navigate= useNavigate()
     formData.append('resume', file);
   
     try {
-      const response = await axios.post('http://localhost:5000/api/upload-resume', formData, {
+      const response = await axios.post('https://kudosware-jxcp.onrender.com/api/upload-resume', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

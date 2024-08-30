@@ -9,7 +9,7 @@ function Navigation() {
   const dispatch = useDispatch();
   React.useEffect(() => {
     axios
-      .get("http://localhost:5000/profile", {
+      .get("https://kudosware-jxcp.onrender.com/profile", {
         withCredentials: true,
       })
       .then((res) => {

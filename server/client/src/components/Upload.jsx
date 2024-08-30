@@ -16,7 +16,7 @@ function ResumeUpload() {
     formData.append('resume', file); // Assuming `file` is the file object
   
     try {
-      const response = await axios.post('http://localhost:5000/api/upload-resume', formData, {
+      const response = await axios.post('https://kudosware-jxcp.onrender.com/api/upload-resume', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
