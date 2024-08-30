@@ -45,7 +45,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err));
 
 // Test Route
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("yes api works");
 });
 
